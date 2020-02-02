@@ -1,3 +1,5 @@
+import Data.Char
+
 --Exercise 1
 exc1 = [1..6]
 
@@ -31,4 +33,8 @@ evenList = [2*n | n <- [2,4,7], isEven n, n>3]
 
 --Exercise 9
 doubleAll :: [Integer] -> [Integer]
-doubleAll [x] = [x..*2]
+doubleAll xs = [x * 2 | x <- xs]
+
+--Exercise 10
+capitalize :: String -> String
+capitalize xs = [toUpper(x) | x <- xs]
