@@ -50,3 +50,13 @@ sigma' n = sum[x^2 | x <-[1..n]]
 --Exercise 13
 grid :: Int -> Int -> [(Int, Int)]
 grid a b = [(a, b) | a <-[0..a], b <-[0..b]]
+
+--Exercise 14
+square :: Int -> [(Int, Int)]
+--square n= [(x, y) | x<-[0..n], y <-[0..n], x/=y]
+square n = [(x, y) | (x, y) <- grid n n, x/=y]
+
+--Exercise 15
+--myReplicate 3 True = [True, True, True]
+myReplicate :: Int -> a -> [a]
+myReplicate x a = [a | _ <- [1..x]] 
