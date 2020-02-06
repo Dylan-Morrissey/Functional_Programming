@@ -46,3 +46,7 @@ mySigma = sum[x^2 | x <- [1..100]]
 --Exercise 12
 sigma' :: Int -> Int
 sigma' n = sum[x^2 | x <-[1..n]]
+
+--Exercise 13
+grid :: Int -> Int -> [(Int, Int)]
+grid a b = [(a, b) | a <-[0..a], b <-[0..b]]
