@@ -29,6 +29,7 @@ luhnDouble x = if (2 * x) > 9
 luhn :: Int -> Int -> Int -> Int -> Bool
 luhn x1 x2 x3 x4 = if 0 == sum[luhnDouble x1, x2, luhnDouble x3, x4] `mod` 10
     then True
+    
     else False
 
 --Question 8

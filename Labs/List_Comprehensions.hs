@@ -38,3 +38,11 @@ doubleAll xs = [x * 2 | x <- xs]
 --Exercise 10
 capitalize :: String -> String
 capitalize xs = [toUpper(x) | x <- xs]
+
+--Exercise 11
+mySigma :: Int
+mySigma = sum[x^2 | x <- [1..100]]
+
+--Exercise 12
+sigma' :: Int -> Int
+sigma' n = sum[x^2 | x <-[1..n]]
