@@ -60,3 +60,11 @@ square n = [(x, y) | (x, y) <- grid n n, x/=y]
 --myReplicate 3 True = [True, True, True]
 myReplicate :: Int -> a -> [a]
 myReplicate x a = [a | _ <- [1..x]] 
+
+--Exercise 16
+pyhs :: Int -> [(Int, Int, Int)]
+pyhs n = [(x, y, z) | x <-[1..n], y <-[1..n], z<-[1..n], x^2 + x^2 = z^2]
+
+--Exercise 17
+perfects :: Int -> [Int]
+perfects n = [x | x<-[1..n], x==sum(factors n) - x]
