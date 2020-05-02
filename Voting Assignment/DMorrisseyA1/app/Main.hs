@@ -9,5 +9,6 @@ main = do
 
  -- Reads the data from uk.csv (Uncleaned)
     csvData <- readFile "uk.csv"
-    
-    print (csvData)
+
+
+    print $ split_new_line csvData
