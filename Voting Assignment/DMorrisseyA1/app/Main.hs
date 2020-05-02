@@ -9,6 +9,7 @@ main = do
 
  -- Reads the data from uk.csv (Uncleaned)
     csvData <- readFile "uk.csv"
+    let list_data = split_new_line csvData
 
+    print (remove_star list_data)
 
-    print $ split_new_line csvData
