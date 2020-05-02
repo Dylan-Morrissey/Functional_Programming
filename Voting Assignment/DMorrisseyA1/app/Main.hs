@@ -10,6 +10,6 @@ main = do
  -- Reads the data from uk.csv (Uncleaned)
     csvData <- readFile "uk.csv"
     let list_data = split_new_line csvData
-
-    print (remove_star list_data)
+    let cleaned_votes = sort_by_vote (candidate_names (remove_duplicates (remove_empty list_data))) 
+    print  (cleaned_votes)
 

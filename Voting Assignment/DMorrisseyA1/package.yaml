@@ -30,6 +30,7 @@ library:
   other-modules: []
   dependencies: 
     - split
+    - unique
 
 executables:
   DMorrisseyA1-exe:
@@ -41,6 +42,7 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - split
+    - unique
     - DMorrisseyA1
 
 tests:

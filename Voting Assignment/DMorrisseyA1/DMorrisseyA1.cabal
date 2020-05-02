@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: bea5103070c95acf37f87db8edf9c2d4f7957aec657c7434f8380d3cc18f27ee
+-- hash: f1c108fe960e107fa77fce060835dfde9d7d47dca2dc7928d394ad9f2da54d00
 
 name:           DMorrisseyA1
 version:        0.1.0.0
@@ -34,6 +34,7 @@ library
   build-depends:
       base >=4.7 && <5
     , split
+    , unique
   default-language: Haskell2010
 
 executable DMorrisseyA1-exe
@@ -47,6 +48,7 @@ executable DMorrisseyA1-exe
       DMorrisseyA1
     , base >=4.7 && <5
     , split
+    , unique
   default-language: Haskell2010
 
 test-suite DMorrisseyA1-test
