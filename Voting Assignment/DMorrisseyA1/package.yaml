@@ -27,6 +27,8 @@ library:
   exposed-modules: 
     - Lib 
     - Clean.CleanVotes
+    - Alt.AltVote
+    - SingleTransferableVote.STV
   other-modules: []
   dependencies: 
     - split

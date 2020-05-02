@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: f1c108fe960e107fa77fce060835dfde9d7d47dca2dc7928d394ad9f2da54d00
+-- hash: 2f00a1bbd87113541384a01299b79039685bf46258a8bde392c8e38516af92f8
 
 name:           DMorrisseyA1
 version:        0.1.0.0
@@ -29,6 +29,8 @@ library
   exposed-modules:
       Lib
       Clean.CleanVotes
+      Alt.AltVote
+      SingleTransferableVote.STV
   hs-source-dirs:
       src
   build-depends:

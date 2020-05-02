@@ -1,0 +1,2 @@
+module Alt.AltVote where
+
